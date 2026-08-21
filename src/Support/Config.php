@@ -39,7 +39,10 @@ class Config
             return TableLayoutTogglePlugin::get()->shouldPersistLayoutUsing();
         }
 
-        return config('table-layout-toggle.persist.persiter', Persisters\LocalStoragePersister::class);
+        return config(
+            'table-layout-toggle.persist.persister',
+            config('table-layout-toggle.persist.persiter', Persisters\LocalStoragePersister::class),
+        );
     }
 
     public static function shouldUseCacheStore(): ?string

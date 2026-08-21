@@ -330,7 +330,7 @@ TableLayoutTogglePlugin::make()
     );
 
 // Configuration file
-'persiter' => Persisters\CachePersister::class,
+'persister' => Persisters\CachePersister::class,
 
 'cache' => [
     'storage' => 'redis', // change storage to redis

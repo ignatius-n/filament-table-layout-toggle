@@ -34,7 +34,7 @@ return [
         /**
          * Enable to persist selected layout in user's local storage.
          */
-        'persiter' => Persisters\LocalStoragePersister::class,
+        'persister' => Persisters\LocalStoragePersister::class,
 
         /**
          * Configure options for the cache persister.
